@@ -1,0 +1,28 @@
+#menu a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+#menu button{
+    font-size: 18px;
+    font-weight: bold;
+}
+.carousel-inner {
+    max-height: 39rem;
+}
+
+footer{
+    background: #1b2a4e;
+    min-height: 100px;
+}
+
+footer p{
+    color: #f3f3f3;
+    text-align: center;
+}
+
+#iconos {
+    font-size: 26px;
+    padding: 0 8;
+    color: #f3f3f3;
+}

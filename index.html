@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header class="container-fluid bg-primary d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6">Linea Directa 01-800-8000</p>
+    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary id = "menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <span class="text-primary fs-5 fw-bold">TravelEX</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Miembros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Planes
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Viajes completos</a></li>
+                  <li><a class="dropdown-item" href="#">Reservaciones</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Lista de Hoteles</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Proximamente</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="email">
+              <input class="form-control me-2" type="email" placeholder="Correo" aria-label="email">
+              <button class="btn btn-primary btn-primary-outline-success" type="button">Entrar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!---slider/carrousel-->
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./imagenes/1175581.jpg" class="d-block w-100" alt="Liyue">
+      </div>
+      <div class="carousel-item">
+        <img src="./imagenes/ubicacion-santuarios-mondstadt-genshin-impact.jpg" class="d-block w-100" alt="Mondstadt">
+      </div>
+      <div class="carousel-item">
+        <img src="./imagenes/inazuma.jpg" class="d-block w-100" alt="Inazuma">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--     INTRODUCCION    -->
+  <section class="w-50 mx-auto text-center pt-5" id="intro">
+    <h1 class="p-3 fs-2 border-top border-3">Tu Agencia de viajes de confianza para <span class="text-primary">Viajes mas baratos</span></h1>
+    <p class="p-3 fs-4"><span class="text-primary">TravelEX</span>La agenica de viajes que te permite planear todas y cada una de las etapas de tu siguiente viaje de una manera sencilla y barata.</p>
+  </section>
+  <!----- SUSCRIPCION PARA RECIBIR SPPAM------>
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg " data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Suscribirse
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Gracias!</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          A partir de ahora, recibiras informacion en tu correo de forma automatica acerca de nuestras promociones
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Cambiar correo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="Proximamente tendremos disponible la funcion de rentar un airbnb como parte de tu experiencia">Rentar Airbnb</button>
+
+  <!-----------------PIE DE PAGINA----------------------->
+  <footer class="w-100 d-flex align-items justify-content-center flex-wrap">
+    <p class="fs-5 px-3 pt-3">TravelEX &copy; Todos los derechos reservados 2023</p>
+    <div id="iconos">
+        <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+        <a href="https://twitter.com/?lang=es"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
